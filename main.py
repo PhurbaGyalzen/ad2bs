@@ -19,7 +19,7 @@ AD2BS is a powerful and versatile API designed to convert between two widely use
 def convert_ad_to_bs(body: DateConvertSchema):
     try:
         r = requests.post('https://www.ashesh.com.np/linkdate-converter.php', data={
-            'year': body.year,
+            'yeare': body.year,
             'month': body.month,
             'day': body.day,
             'submit': 'convert'
