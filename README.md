@@ -33,13 +33,16 @@ The API will return a JSON object with the following fields:
 - status: (bool)
 - result: (str)
 
+Example JSON response:
+
 ```
 {
     "status": true,
     "result": "2023 April 28 Friday"
 }
 ```
-Example JSON response:
+
+For more details please visit the official [documentation](https://ad2bs.onrender.com/redoc).
 
 ## Support
 For any questions or concerns, please contact the API support team.
