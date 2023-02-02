@@ -9,6 +9,7 @@ class DateConvertSchema(BaseModel):
     def validate_month(cls, value):
         if value > 12 or value <= 0:
             raise ValueError(f"Month should be 1 to 12. Month cannot be {value}") 
+        return value
 
     @validator("day")
     def validate_day(cls, value):
