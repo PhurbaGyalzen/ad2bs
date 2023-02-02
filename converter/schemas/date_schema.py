@@ -1,9 +1,9 @@
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, validator, Field
 
 class DateConvertSchema(BaseModel):
-    year: int
-    month: int
-    day: int
+    year: int = 2000
+    month: int = 6
+    day: int = 15
 
     @validator("month")
     def validate_month(cls, value):
